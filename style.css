@@ -1,0 +1,540 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.prodWrap {
+    position: relative;
+    padding: 1.1em;
+    height: 100%;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#AD6BFF , #74BCF7 );
+    height: 100%;
+    width: 25%;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    position: relative;
+
+}
+.cardspc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    position: relative;  
+}
+.img {
+    width: 4em;
+    height: 4em;
+    position: absolute;
+right: 4.2em;
+    bottom: 12px;
+}
+.imgspc {
+    width: 7em;
+    height: 7em;
+    position: absolute;
+    right: -1em;
+}
+.details {
+    height: 100%;
+    width: 40%;
+    background: #fff;
+    padding: 1em;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12px;
+    letter-spacing: 2px;
+    box-shadow: 0 21px 21px 0 rgba(0,0,0,0.15);
+}
+.detailsspc {
+    height: 100%;
+    width: 60%;
+    background: #fff;
+    padding: 1em;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12px;
+    transform: scale(1.3);
+    margin-left: 2em;
+    letter-spacing: 2px;
+    box-shadow: 0 21px 21px 0 rgba(0,0,0,0.15);
+}
+.innertxt {
+   letter-spacing: 0px; 
+   font-weight:normal;
+   opacity: 0.7;
+   font-size: 10px;
+   padding-top: 5px;
+}
+.icon {
+    width: 1em;
+    height: 1em;;
+}
+.section {
+    width: 75%;
+    height: 100%;
+    padding: 1em;
+}
+.devices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 2em 0 2em;
+}
+.devicesnxt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 2em 0 2em;
+}
+.device {
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: bolder;
+
+}
+.plus {
+    background-image: linear-gradient(-135deg, #DEFFC9 0%, #A3F8FF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;;
+    margin-right: 2em;
+}
+.right {
+    background-image: linear-gradient(-135deg, #DEFFC9 0%, #A3F8FF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;;
+    margin-right: 2em;
+    z-index: 1;
+    position: absolute;
+    right: -4em;
+    bottom: 4px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    margin-right: 2em;
+  }
+  .shades {
+    font-size: 12px;
+    padding: 2em 2em 0 4em;
+    display: flex;
+    align-items: center;
+color: #AC6CFF;
+  }
+  .line {
+      width: 80%;
+       height: 1px;
+       opacity: 0.3;
+       background: #AC6CFF;
+       margin-left: 1em;
+  }
+  .lamp {
+    text-shadow: 0 20px 25px rgba(0,0,0,0.15);
+    font-weight: bolder;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 1px;
+    top: 4px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.15);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  /* The container */
+.contain {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+
+  }
+  .purple {
+    background: #8245E6;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+  }
+  .pink {
+    background: #C791CD;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+  }
+  .green {
+    background: #4AC0E0;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+  }
+  .blue {
+    background: #1089EB;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+  }
+  .red {
+    background: #FF4563;
+    box-shadow: 0 27px 27px 0 rgba(0,0,0,0.15);
+  }
+  /* On mouse-over, add a grey background color */
+
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+   transform: scale(1.4)
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .contain input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .contain .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .box {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 2em;
+      height: 1em;
+      padding-bottom: 2em;
+  }
+  .lists {
+      padding: 1.5em;
+  }
+  .item {
+      width: 91%;
+      height: 2em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+   
+  
+  }
+  .tick {
+      padding-right: 8px;
+  }
+  .time {
+      padding-left: 10px;
+  }
+  .active {
+    color: #fff;
+    background-image: linear-gradient(-135deg, #AD6BFF 0%, #74BCF7 100%);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.15);
+  }
+  .innerbar {
+    display: flex;
+    flex-direction: row;
+    width: 7em;
+    justify-content: flex-start;
+      align-items: center;
+  }
+  #arc-slider {
+    height: 110px !important;
+    width: 500px !important;
+    overflow: hidden;
+    padding-top: 2em;
+ padding-left: 12em;
+}
+#arc-slider .rs-container {
+    margin-left: -350px; /* here 300 is the radius value */
+    left: 50%;
+}
+#arc-slider .rs-tooltip {
+    top: 42px;
+}
+#arc-slider .rs-tooltip-text {
+    font-size: 23px;
+    font-weight: bolder;
+}
+#arc-slider .rs-border{
+    border-width: 0px;
+}
+
+/* Appearance related changes */
+.rs-control .rs-range-color {
+    background-image: linear-gradient(-135deg, #AD6BFF 0%, #74BCF7 100%);
+}
+
+.rs-control .rs-path-color {
+    background-image: linear-gradient(-135deg, #E5E5E5  0%, #979797 100%);
+}
+.rs-bar .rs-seperator {
+    display: block !important;
+}
+.rs-control .rs-handle {
+    background-image: linear-gradient(-135deg, #AD6BFF 0%, #74BCF7 100%);
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+    width: 18px !important;
+    height: 18px !important ;
+    margin: -1px 0px 0px -5px !important;
+
+}
+.topcover {
+    position: absolute;
+    width: 24%;
+    height: 8em;
+    background: #AD6BFF;
+    opacity: 0.7;
+}
+@media only screen and (max-width: 700px) {
+    
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;  
+    position: fixed;
+}
+.section {
+    position: relative;
+}
+.devices {
+    flex-direction: column-reverse;
+    position: relative;
+}
+.plus {
+    background: #fff;
+    position: absolute;
+    right: 0;
+    transform: scale(1.5);
+}
+.device {
+    position: absolute;
+    left: -2em;
+    top: 1.4em;
+}
+.detailsspc {
+    display: none;
+}
+.title {
+    position: absolute;
+    bottom: 19px;
+    font-size: 9px;
+}
+.box {
+    flex-wrap: wrap;
+    display: flex;
+    height: 4em;
+    justify-content: flex-start;
+    padding-bottom: 0;
+}
+.section {
+    width: 60%;
+}
+.sidebar {
+    min-width: 40%;
+}
+.imgspc {
+    top: -1.2em;
+}
+.topcover {
+    width: 9em;
+}
+.img {
+    height: 5.5em;
+    width: 5.5em;
+    left: 0em;
+    top: -0.4em;
+}
+.card {
+    justify-content: center;
+}
+.cardspc{
+    z-index: 10;;
+}
+.card:first-child {
+    margin-top: 0;
+}
+.shades {
+    padding-left: 1em;
+}
+.lamp {
+    position: absolute;
+    transform: scale(1.3);
+    left: 27px;
+    top: 7em;
+    width: 1em;
+}
+.prodWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.innertxt {
+    display: none;
+}
+.devicesnxt {
+    margin-top: 6em;
+    flex-direction: column-reverse;
+}
+.details {
+    height: 5.5em;
+    width: 5.5em;
+}
+.rounder {
+    position: absolute;
+    right: 1em;
+    top: 8em;
+}
+.contain {
+    padding-top: 2em;
+    width: 1em;
+
+}
+.percent {
+    display: none;
+}
+#arc-slider  {
+    padding-left: 8em;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+ 
+.topcover{
+    width: 20%;;
+}
+.innertxt {
+    display: none;
+}
+.details {
+    height: 5.5em;
+    width: 5.5em;
+}
+.box {
+    justify-content: space-between;
+}
+.img {
+    height: 5.5em;
+    width: 5.5em;
+    left: 0em;
+    top: -0.7em;
+}
+.sidebar {
+    width: 25%;
+}
+.section {
+    width: 75%;
+}
+.detailsspc {
+    display: none;
+}
+.prodWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    position: absolute;
+    bottom: 19px;
+    font-size: 9px;
+}
+}
